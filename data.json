@@ -1,0 +1,117 @@
+{
+    "students": [
+      {
+        "student_id": 1,
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "date_of_birth": "2000-01-01",
+        "gender": "Male",
+        "registration_date": "2024-06-12T00:00:00Z"
+      },
+      {
+        "student_id": 2,
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "email": "jane.smith@example.com",
+        "date_of_birth": "2000-02-02",
+        "gender": "Female",
+        "registration_date": "2024-06-12T00:00:00Z"
+      }
+    ],
+    "courses": [
+      {
+        "course_id": 1,
+        "course_name": "Mathematics",
+        "description": "Introduction to mathematics"
+      },
+      {
+        "course_id": 2,
+        "course_name": "Physics",
+        "description": "Introduction to physics"
+      }
+    ],
+    "grades": [
+      {
+        "grade_id": 1,
+        "student_id": 1,
+        "course_id": 1,
+        "grade": 85.5
+      },
+      {
+        "grade_id": 2,
+        "student_id": 1,
+        "course_id": 2,
+        "grade": 78.2
+      },
+      {
+        "grade_id": 3,
+        "student_id": 2,
+        "course_id": 1,
+        "grade": 90
+      },
+      {
+        "grade_id": 4,
+        "student_id": 2,
+        "course_id": 2,
+        "grade": 82.7
+      }
+    ],
+    "attendance": [
+      {
+        "attendance_id": 1,
+        "student_id": 1,
+        "course_id": 1,
+        "date": "2024-05-01",
+        "status": "Present"
+      },
+      {
+        "attendance_id": 2,
+        "student_id": 1,
+        "course_id": 2,
+        "date": "2024-05-01",
+        "status": "Absent"
+      },
+      {
+        "attendance_id": 3,
+        "student_id": 2,
+        "course_id": 1,
+        "date": "2024-05-01",
+        "status": "Present"
+      },
+      {
+        "attendance_id": 4,
+        "student_id": 2,
+        "course_id": 2,
+        "date": "2024-05-01",
+        "status": "Present"
+      }
+    ],
+    "marks": [
+      {
+        "mark_id": 1,
+        "student_id": 1,
+        "subject": "Math",
+        "mark": 85
+      },
+      {
+        "mark_id": 2,
+        "student_id": 1,
+        "subject": "Science",
+        "mark": 90
+      },
+      {
+        "mark_id": 3,
+        "student_id": 2,
+        "subject": "Math",
+        "mark": 92
+      },
+      {
+        "mark_id": 4,
+        "student_id": 2,
+        "subject": "Science",
+        "mark": 88
+      }
+    ]
+  }
+  

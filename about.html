@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Education System</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+  <style>
+    body {
+      background-image: url("{{ url_for('static', filename='about.jpg') }}");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+      text-align: center;
+    }
+    .content {
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 60px; /* To avoid overlap with nav */
+    }
+    .content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto; /* Center the image and add margin at the bottom */
+    }
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    h1 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('suggestions') }}">Suggestions</a></li>
+      <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+    </ul>
+  </nav>
+  
+  <div class="content">
+    <h1>About Us</h1>
+    <img src="{{ url_for('static', filename='your-image.jpg') }}" alt="">
+    <p>Welcome to the Education System Chatbot. We are dedicated to providing the best educational resources and support for our students. Our chatbot is designed to assist you with information about courses, grades, and other school-related information. Sri Vishnu Educational Society has stood first among equals because of its quest and hard work to develop as an educational society which stands apart. Our founder chairman, Late. Padma Bhushan Dr. B.V. Raju, through his excellent vision and foresight established many educational institutions. These institutions are play a vital role in molding and shaping the future of thousands of students year after year. BVRIT is located in Greater Hyderabad region, Narsapur in close proximity to Sangareddy and IIT Hyderabad. We have a good network of busses to commute to campus from all parts of Hyderabad, Sangareddy and Medak. Excellent hostel facilities have been provided for the students. The hostels have a water heating facility, chilled mineral water, and recreational facilities. 
+  </div>
+</body>
+</html>
+

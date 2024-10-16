@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Education System Chatbot</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-image: url("{{ url_for('static', filename='images.jpg') }}");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the container horizontally */
+    }
+    .container {
+      text-align: center; /* Align contents in the center */
+      margin-top: 150px;
+      background-color: rgba(0, 0, 0, 0.8); /* Darken the background color */
+      color: rgb(255, 255, 255); /* Change text color to white */
+      padding: 30px; /* Add padding */
+      border-radius: 10px; /* Round corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      max-width: 400px; /* Set a maximum width */
+      width: 100%; /* Make the container responsive */
+      height: auto; /* Adjust the height */
+      min-height: 300px; /* Decrease the minimum height */
+    }
+    .small-image {
+      display: inline-block; /* Make the image inline with text */
+      vertical-align: middle; /* Align vertically with text */
+      margin-right: 5px; /* Adjust margin for spacing */
+      width: 70px;
+      height: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .logo {
+      width: 140px; /* Increase the width of the logo */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .login-button {
+      margin-top: 20px; /* Move the login button downwards */
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('about') }}">About Us</a></li>
+    </ul>
+    <img src="{{ url_for('static', filename='bvritlogo.png') }}" alt="BVRIT Logo" class="logo">
+  </nav>
+
+  <div class="container">
+    <h2>
+      <img src="{{ url_for('static', filename='log.jpg') }}" alt="Small Image" class="small-image">
+      EDUBOT LOGIN
+    </h2>
+    <p class="error-message"></p>
+    <form action="/form_login" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required style="background-color: white;"><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <input type="submit" value="Login" class="login-button">
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
